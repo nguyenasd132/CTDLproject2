@@ -1,7 +1,5 @@
 # Quản lý nhân sự (Employee Management)
 
-Đây là một dự án C++ đơn giản, xây dựng một hệ thống quản lý nhân sự trên giao diện dòng lệnh.
-
 ## Mô tả (Description)
 
 Ứng dụng này cho phép quản lý thông tin nhân viên với hai vai trò người dùng chính: Quản trị viên (Admin) và Nhân viên (Employee). Giao diện được xây dựng hoàn toàn trên console.
