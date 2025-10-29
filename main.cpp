@@ -1,15 +1,25 @@
 #include <iostream>
 #include <string>
 #include <iomanip>
+
+#ifdef _WIN32
 #include <windows.h>
+#endif
+
 using namespace std;
 
 void setColor(int color) {
+    #ifdef _WIN32
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
+    #endif
 }
 
 void clearScreen() {
+    #ifdef _WIN32
     system("cls");
+    #else
+    system("clear");
+    #endif
 }
 
 void pauseConsole() {
@@ -103,8 +113,10 @@ void employeeMenu() {
 }
 
 int main() {
+    #ifdef _WIN32
     SetConsoleOutputCP(CP_UTF8);
     SetConsoleCP(CP_UTF8);
+    #endif
    // clearScreen();
     while (true) {
         clearScreen();
