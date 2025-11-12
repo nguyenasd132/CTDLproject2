@@ -1,0 +1,10 @@
+0001 NguyenVanA 15/02/1998 Nam TruongPhong 20000000 0905123456 nguyenvana 123456
+0002 LeThiB 03/11/1999 Nu NhanVien 15000000 0988123456 lethib bpass456
+0003 TranVanC 21/07/2000 Nam NhanVien 12000000 0912345678 tranc cpass789
+0004 PhamThiD 12/12/2001 Nu ThucTapSinhKhongLuong 0 0977123123 phamthid dpass000
+0005 DoVanE 05/09/1997 Nam TruongPhong 25000000 0909999999 dovane epass321
+0006 BuiThiF 08/03/2002 Nu NhanVien 13000000 0934567890 buithif fpass654
+0007 NguyenVanG 17/10/1995 Nam TruongPhong 30000000 0908888777 nguyenvang gpass111
+0008 HoangThiH 28/06/2000 Nu NhanVien 14000000 0911222333 hoangthih hpass222
+0009 PhanVanI 09/09/2003 Nam ThucTapSinhKhongLuong 0 0977555666 phanvani ipass333
+0010 VoThiJ 23/01/1999 Nu NhanVien 16000000 0922444555 vothij jpass444

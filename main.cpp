@@ -7,7 +7,7 @@
 #include <vector>
 #include <string>
 #include "employee.h"
-
+#include "admin.h"
 using namespace std;
 
 vector<Employee> ds;
@@ -188,16 +188,17 @@ bool adminLogin() {
     clearScreen();
     printTitle("ĐĂNG NHẬP ADMIN");
     int attempts = 0;
+    string username, password;
     while (attempts < 3) {
-        string username, password;
         cout << "Tên đăng nhập: ";
         getline(cin, username);
         cout << "Mật khẩu: ";
         getline(cin, password);
-        string u, p;
         ifstream file(ADMIN_FILE);
+        string u, p;
         while (file >> u >> p) {
-            if (u == username && p == password) {
+            Admin admin(u, p);
+            if (admin.checkLogin(username, password)) {
                 printOk("Đăng nhập thành công!");
                 pauseConsole();
                 return true;
@@ -205,7 +206,7 @@ bool adminLogin() {
         }
         attempts++;
         printError("Sai tên đăng nhập hoặc mật khẩu!");
-        if(attempts == 3) {
+        if (attempts == 3) {
             printError("Bạn đã nhập sai 3 lần. Hệ thống thoát!");
             pauseConsole();
             return false;
